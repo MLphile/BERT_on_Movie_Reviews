@@ -1,6 +1,7 @@
 from transformers import BertModel
 import torch.nn as nn
 
+
 class BertUncasedModel(nn.Module):
     def __init__(self, bert_type, drop_rate):
         super(BertUncasedModel, self).__init__()
