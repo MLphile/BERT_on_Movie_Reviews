@@ -1,6 +1,7 @@
 import torch
 from torch.utils.data import Dataset, DataLoader
 
+import re
 
 class CustomDataset(Dataset):
     def __init__(self, review, target, tokenizer, max_len, preprocess=None):
@@ -28,3 +29,12 @@ class CustomDataset(Dataset):
             )
 
         return encoded_X, y
+
+
+
+def clean(text):
+    # remove weird spaces
+    text =  " ".join(text.split())
+    # remove html tags
+    text = re.sub(r'<.*?>', '', text)
+    return text

@@ -1,6 +1,6 @@
 import torch
 from tqdm import tqdm
-import re
+
 
 
 def train(data_loader, model, criterion, optimizer, device):
@@ -9,16 +9,20 @@ def train(data_loader, model, criterion, optimizer, device):
     
     model.train()
     for X, y in tqdm(data_loader):
-        X = X.to(device)
-        y = y.to(device)
-
         optimizer.zero_grad()
 
+        _input = {}
+
+        y = y.to(device)
+        for key, value in X.items():
+            _input[key] = value.squeeze().to(device)
+        
+
         # forward pass
-        out = model(X)
+        out = model(_input)
 
         # loss
-        loss = criterion(out, y)
+        loss = criterion(out.squeeze(), y)
         running_loss += loss.item()
 
         # backward pass      
@@ -42,21 +46,25 @@ def train(data_loader, model, criterion, optimizer, device):
     return mean_loss, mean_accuracy
 
     
-def train(data_loader, model, criterion, optimizer, device):
+def test(data_loader, model, criterion, device):
     running_accuracy = 0
     running_loss = 0
     
     model.eval()
     with torch.no_grad():
         for X, y in data_loader:
-            X = X.to(device)
+            _input = {}
+
             y = y.to(device)
+            for key, value in X.items():
+                _input[key] = value.squeeze().to(device)
+            
 
             # forward pass
-            out = model(X)
+            out = model(_input)
 
             # loss
-            loss = criterion(out, y)
+            loss = criterion(out.squeeze(), y)
             running_loss += loss.item()
 
             # accuracy
@@ -70,9 +78,3 @@ def train(data_loader, model, criterion, optimizer, device):
 
 
 
-def clean(text):
-    # remove weird spaces
-    text =  " ".join(text.split())
-    # remove html tags
-    text = re.sub(r'<.*?>', '', text)
-    return text
