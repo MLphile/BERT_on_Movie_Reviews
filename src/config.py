@@ -1,0 +1,1 @@
+DATA_PATH = 'data/IMDB_Dataset.csv'

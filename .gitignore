@@ -1,6 +1,9 @@
 # Test file
 
 test.ipynb
+
+# Model (too heavy)
+*.bin
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
