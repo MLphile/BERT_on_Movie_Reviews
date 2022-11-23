@@ -18,7 +18,7 @@ I leveraged the pretrained BERT (Bidirectional Encoder Representations from Tran
 
 [Here](https://huggingface.co/docs/transformers/training) is a nice tutorial from Hugging Face explaining how to fine-tune a pretrained model.
 ## Evaluation
-The accuracy on the validation set reached 89.35. Evaluation results on the test can be seen in the table below.
+The accuracy on the validation set reached 89.35. Evaluation results on the test set can be seen in the table below.
 | class | precision | recall | f1-score | support |
 | --- | --- | --- |--- |--- |
 | 0 | 0.91 | 0.89 | 0.90 | 3705 |
