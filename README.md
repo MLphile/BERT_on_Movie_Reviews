@@ -35,7 +35,9 @@ The streamlit app is available [here](https://mlphile-bert-on-movie-reviews-srca
 However, if you want to run it locally or want to try out different things, you can clone this repo and preferably create a virtual environment to install all dependencies (see requirements.txt).  
 * `cd` into the project folder
 * `streamlit run scr/app.py`
-and voila!
+and voila you have it running in your browser!
+
+If you face any issues or want to ask something feel free to get in touch 😉.
 
 ## References
 * [What is Sentiment Analysis? Types and Use Cases](https://www.taus.net/resources/blog/what-is-sentiment-analysis-types-and-use-cases)
