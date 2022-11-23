@@ -7,7 +7,9 @@ Have you ever wanted to summarize all the reviews for a given movie to decide if
 The aim of this project is to build a model that can accurately predict whether a movie review is positive or not.  The model will be made available to interact with through a simple Streamlit.
 
 ## Data
-The data for training is the [IMDB daset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews) which consists of about 50K movie reviews.  
+The dataset used to develop our binary sentiment classifier is an [IMDB dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews) which consists of about 50K movie reviews.  
+There was however a small proportion of duplicates (0.8%) which I discarded. So the final total number of samples was 49582.  
+The number of positive and negative reviews is well balanced.
 ## Model and Training
 I leveraged the pretrained BERT (Bidirectional Encoder Representations from Transformers) made available by Hugging Face. The model (bert-base-uncased) was fine-tuned using the following hyper-parameters:
 * `Learning rate = 2e-5` using `AdamW` optimizer
