@@ -7,8 +7,6 @@ The aim of this project is to build a model that can accurately predict whether 
 
 ## Data
 The data for training is the [IMDB daset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews) which consists of about 50K movie reviews.  
-We'll fine-tune BERT() to predict whether a review is positive or not, and then .
-
 ## Model and Training
 I leveraged the pretrained BERT (Bidirectional Encoder Representations from Transformers) made available by Hugging Face. The model (bert-base-uncased) was fine-tuned using the following hyper-parameters:
 * `Learning rate = 2e-5` using `AdamW` optimizer
