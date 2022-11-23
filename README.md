@@ -4,7 +4,7 @@
 Sentiment analysis is a use case of text classification which consists of assigning a category to a given text. It's a powerful Natural Language Processing (NLP) technique that makes it possible to automatically analyze what people think about a certain topic. This can help companies and individuals to quickly make more informed decisions. Sentiment analysis has for example applications in [social media, customer service and market research](https://www.taus.net/resources/blog/what-is-sentiment-analysis-types-and-use-cases).  
 
 Have you ever wanted to summarize all the reviews for a given movie to decide if that movie is worth watching without wasting time reading all the reviews?
-The aim of this project is to build a model that can accurately predict whether a movie review is positive or not and then make it available through a simple streamlit app.
+The aim of this project is to build a model that can accurately predict whether a movie review is positive or not.  The model will be made available to interact with through a simple Streamlit.
 
 ## Data
 The data for training is the [IMDB daset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews) which consists of about 50K movie reviews.  
