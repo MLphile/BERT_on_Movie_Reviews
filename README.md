@@ -31,7 +31,7 @@ The accuracy on the validation set reached 89.35. Evaluation results on the test
 ## Project Structure
 
 ## How to run
-
+The streamlit app is available [here](https://mlphile-bert-on-movie-reviews-srcapp-9n3r3m.streamlit.app/)
 ## References
 * [What is Sentiment Analysis? Types and Use Cases](https://www.taus.net/resources/blog/what-is-sentiment-analysis-types-and-use-cases)
 * [Hugging Face](https://huggingface.co/docs/transformers/index)
