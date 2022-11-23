@@ -28,8 +28,6 @@ The accuracy on the validation set reached 89.35. Evaluation results on the test
 | 0 | 0.91 | 0.89 | 0.90 | 3705 |
 | 1 | 0.90 | 0.92 | 0.91 | 3733 |
 
-## Project Structure
-
 ## How to run
 The streamlit app is available [here](https://mlphile-bert-on-movie-reviews-srcapp-9n3r3m.streamlit.app/). At the beginning, it takes few secondes to load the model and its tokenizer. Have fun playing with it :smiley:.  
 However, if you want to run it locally or want to try out different things, you can clone this repo and preferably create a virtual environment to install all dependencies (see requirements.txt).  
