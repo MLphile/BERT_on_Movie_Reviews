@@ -20,7 +20,7 @@ I leveraged the pretrained BERT (Bidirectional Encoder Representations from Tran
 
 [Here](https://huggingface.co/docs/transformers/training) is a nice tutorial from Hugging Face explaining how to fine-tune a pretrained model.
 
-The model is quite heavy (approx. 427 MB). So after fine-tuning, I've pushed it to the [Hugging Face hub](https://huggingface.co/MLphile/fine_tuned_bert-movie_review), from where it can be accessed using the following checkpoint address: `MLphile/fine_tuned_bert-movie_review`.
+The model is quite heavy (approx. 427 MB). So after fine-tuning, I pushed it to the [Hugging Face hub](https://huggingface.co/MLphile/fine_tuned_bert-movie_review), from where it can be accessed using the following checkpoint address: `MLphile/fine_tuned_bert-movie_review`.
 ## Evaluation
 The accuracy on the validation set reached 89.35. Evaluation results on the test set can be seen in the table below.
 | class | precision | recall | f1-score | support |
